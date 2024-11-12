@@ -9,5 +9,14 @@ class Perfume extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['marca', 'nombre', 'notas', 'tamaño'];
+    // Nombre de la tabla
+    protected $table = 'perfumen';
+
+    // Campos que se pueden asignar de manera masiva
+    protected $fillable = [
+        'marca',
+        'nombre',
+        'notas',
+        'tamaño'
+    ];
 }

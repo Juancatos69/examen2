@@ -4,22 +4,32 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePerfumesTable extends Migration
+class CreatePerfumenTable extends Migration
 {
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
     public function up()
     {
-        Schema::create('perfumes', function (Blueprint $table) {
+        Schema::create('perfumen', function (Blueprint $table) {
             $table->id();
             $table->string('marca');
             $table->string('nombre');
             $table->text('notas');
-            $table->float('tamaño'); // o string si prefieres
+            $table->string('tamaño');
             $table->timestamps();
         });
     }
 
+    /**
+    
+     *
+     * @return void
+     */
     public function down()
     {
-        Schema::dropIfExists('perfumes');
+        Schema::dropIfExists('perfumen');
     }
 }
