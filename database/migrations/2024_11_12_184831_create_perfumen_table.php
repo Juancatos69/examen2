@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Schema;
 class CreatePerfumenTable extends Migration
 {
     /**
-     * Run the migrations.
-     *
+    
+     
      * @return void
      */
     public function up()
